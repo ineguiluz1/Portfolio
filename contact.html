@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="img/logo_personal.png" alt="Logo" class="logo logo--nav"> 
+            <nav class="nav" aria-label="Navegación principal">
+                <a class="nav__link" href="index.html">Inicio</a>
+                <a class="nav__link" href="about.html">Sobre mí</a>
+                <a class="nav__link" href="proyectos.html">Proyectos</a>
+                <a class="nav__link" href="contact.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <form>
+        <div class="brand"><img src="img/logo_personal.png" alt="Logo" class="logo logo--large"></div>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label>Nombre</label> <br> <input type="text", placeholder="Introduce tu nombre"><br>
+            <label>e-mail</label> <br> <input type="text", placeholder="Introduce tu e-mail de contacto"><br>
+            <label>Teléfono</label> <br> <input type="text", placeholder="Introduce tu número de teléfono"><br>
+            <label>Sitio Web</label> <br> <input type="url", placeholder="Escribe la URL de tu web">
+        </fieldset>
+        <fieldset>
+            <legend>Por qué?</legend>
+            <textarea placeholder="¿Por qué debería interesarme?", rows="7", cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Motivo de Contacto</legend>
+            <select>
+                <option>Solicitar información</option>
+                <option>Propuesta de colaboración</option>
+                <option>Oferta de trabajo</option>
+                <option>Otro</option>
+            </select>
+            <br><br>    
+            <textarea placeholder="En caso de ser otro. ¿Cuál es el motivo?", rows="7", cols="50"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>¿Cómo prefieres que te contacte?</legend>
+            <input type="radio"><label>e-mail</label>
+            <input type="radio"><label>Teléfono</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Adicional</legend>
+            <label>Adjuntar archivo (Opcional):</label> <input type="file">
+            <label>
+                <input type="checkbox">
+                Quiero recibir novedades sobre tus proyectos
+            </label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <footer>
+        <div class="footer_main">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mí</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <div class="footer__bottom">
+            <small>© <span id="year"></span> Iñigo Eguiluz Mateos. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>

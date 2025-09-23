@@ -4,100 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Mi Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo-container">
-                <img src="img/logo_personal.png" alt="Logo Personal" class="logo">
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About Me</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </nav>
+        <div class="nav-container">
+            <img src="img/logo_personal.png" alt="Logo" class="logo logo--nav"> 
+            <nav class="nav" aria-label="Navegación principal">
+                <a class="nav__link" href="index.html">Inicio</a>
+                <a class="nav__link" href="about.html">Sobre mí</a>
+                <a class="nav__link" href="proyectos.html">Proyectos</a>
+                <a class="nav__link" href="contact.html">Contacto</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="about-main">
-        <section class="hero-section">
-            <div class="container">
-                <h1>Sobre Mí</h1>
-                <p class="hero-subtitle">Conoce más sobre mi historia, pasiones y experiencia</p>
+    <main>
+        <div class="intro-container">
+            <h1>Quién soy?</h1>
+            <p>Soy Iñigo Eguiluz Mateos, estudiante del doble grado en Ciencia de Datos e Inteligencia Artificial
+                 e Ingeniería Informática en la Universidad de Deusto. Me apasiona el mundo de la tecnología, 
+                 la innovación y cómo los datos pueden transformar la manera en que entendemos y mejoramos la sociedad.
+                  Actualmente estoy desarrollando proyectos en áreas como machine learning, sistemas inteligentes y 
+                  aplicaciones prácticas de la inteligencia artificial.
+            </p>
+            <br>
+            <h2>Hobbies</h2>
+            <p>
+                En mi tiempo libre disfruto del running, el gimnasio y los retos de lógica como el cubo de Rubik. 
+                También soy un gran aficionado al cine, que me inspira y me ayuda a desconectar. Estas aficiones 
+                me aportan disciplina, constancia y creatividad, cualidades que aplico también en mis proyectos.
+            </p>
+            <ul>
+                <li>Gimnasio</li>
+                <li>Running</li>
+                <li>Cine</li>
+            </ul>
+        </div>
+
+        <div class="formacion-container">
+            <h1>Estudios</h1>
+            <ol class="timeline">
+                <li class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__meta">
+                        <span class="timeline__years">2008 - 2022</span>
+                        <span class="timeline__badge">Bachillerato</span>
+                    </div>
+                    <div class="timeline__body">
+                        <h3 class="timeline__title">Colegio Vizcaya</h3>
+                        <p class="timeline__desc">Formación escolar completa. Desarrollo de base científica, trabajo en equipo y hábitos de estudio.</p>
+                    </div>
+                </li>
+                <li class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__meta">
+                        <span class="timeline__years">2022 - Actualidad</span>
+                        <span class="timeline__badge badge--accent">Doble Grado</span>
+                    </div>
+                    <div class="timeline__body">
+                        <h3 class="timeline__title">Universidad de Deusto</h3>
+                        <p class="timeline__desc">Ciencia de Datos e Inteligencia Artificial + Ingeniería Informática. Proyectos de ML, IA aplicada y software.</p>
+                    </div>
+                </li>
+            </ol>
+
+            <div class="institutions-logos">
+                <img src="img/covi.png" alt="Colegio Vizcaya">
+                <img src="img/deusto.png" alt="Universidad de Deusto">
             </div>
-        </section>
+        </div>
 
-        <section class="about-content">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text">
-                        <h2>Mi Historia</h2>
-                        <p>Hola, soy [Tu Nombre]. Soy un apasionado desarrollador web con [X] años de experiencia en el desarrollo de aplicaciones modernas y sitios web interactivos.</p>
-                        
-                        <p>Mi viaje en el mundo de la tecnología comenzó cuando [tu historia personal]. Desde entonces, he estado constantemente aprendiendo y mejorando mis habilidades para crear soluciones digitales innovadoras.</p>
+        <div class="tech-skills-container">
+            <h1>Technical Skills</h1>
+            <br>
+            <h2 class="skills-group-title">Lenguajes de programación</h2>
+            <ul class="skills-list skills-list--langs">
+                <li><img class="skill-icon" src="img/python.png" alt="">Python</li>
+                <li><img class="skill-icon" src="img/r.png" alt="">R</li>
+                <li><img class="skill-icon" src="img/java.png" alt="">Java</li>
+                <li><img class="skill-icon" src="img/c.png" alt="">C</li>
+                <li><img class="skill-icon" src="img/cpp.png" alt="">C++</li>
+                <li><img class="skill-icon" src="img/sql.png" alt="">SQL</li>
+            </ul>
+            <h2 class="skills-group-title">Herramientas y tecnologías</h2>
+            <ul class="skills-list skills-list--tools">
+                <li><img class="skill-icon" src="img/sklearn.png" alt="">ML Libraries (Sklearn, Pandas, Numpy, cuML, ...)</li>
+                <li><img class="skill-icon" src="img/torch.png" alt="">DL Libraries (PyTorch, ...)</li>
+                <li><img class="skill-icon" src="img/seaborn.png" alt="">Data Visualization (Matplotlib, Seaborn, ...)</li>
+                <li><img class="skill-icon" src="img/mongo.png" alt="">DB (MySQL, PostgreSQL, MongoDB, ...)</li>
+                <li><img class="skill-icon" src="img/hadoop.png" alt="">Big Data (Hadoop, Spark, ...)</li>
+                <li><img class="skill-icon" src="img/aws.png" alt="">Cloud (AWS, Azure, ...)</li>
+                <li><img class="skill-icon" src="img/github.png" alt="">Version Control (Git, GitHub)</li>
+            </ul>
+        </div>
 
-                        <h3>Mis Pasiones</h3>
-                        <ul class="passions-list">
-                            <li>Desarrollo Frontend con tecnologías modernas</li>
-                            <li>Diseño de interfaces de usuario intuitivas</li>
-                            <li>Optimización de rendimiento web</li>
-                            <li>Aprendizaje continuo de nuevas tecnologías</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="about-image">
-                        <div class="image-placeholder">
-                            <img src="img/logo_personal.png" alt="Logo Personal">
-                        </div>
-                    </div>
-                </div>
+        <div class="soft-skills-container">
+            <h1>Soft Skills</h1>
+            <ul>
+                <li>Pensamiento crítico y analítico</li>
+                <li>Resolución de problemas</li>
+                <li>Comunicación efectiva</li>
+                <li>Trabajo en equipo</li>
+                <li>Adaptabilidad</li>  
+            </ul>
+        </div>
 
-                <div class="skills-section">
-                    <h2>Habilidades Técnicas</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Frontend</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">HTML5</span>
-                                <span class="skill-tag">CSS3</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">React</span>
-                                <span class="skill-tag">Vue.js</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Backend</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">Python</span>
-                                <span class="skill-tag">PHP</span>
-                                <span class="skill-tag">MySQL</span>
-                                <span class="skill-tag">MongoDB</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Herramientas</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">Docker</span>
-                                <span class="skill-tag">AWS</span>
-                                <span class="skill-tag">Figma</span>
-                                <span class="skill-tag">VS Code</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="philosophy-container">
+            <h1>Filosofía personal</h1>
+            <p>
+                Creo firmemente en el poder de la tecnología como motor de cambio positivo.
+                Para mí, la inteligencia artificial, la ciencia de datos y la informática
+                no son solo herramientas, sino oportunidades para aportar soluciones innovadoras a los retos sociales,
+                medioambientales y económicos de nuestro tiempo. Mi filosofía se basa en aprender 
+                de forma constante, afrontar los problemas con creatividad y trabajar en equipo para construir un 
+                futuro más sostenible y humano.
+            </p>
+        </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Iñigo Eguiluz Mateos. Todos los derechos reservados.</p>
+        <div class="footer_main">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mí</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <div class="footer__bottom">
+            <small>© <span id="year"></span> Iñigo Eguiluz Mateos. Todos los derechos reservados.</small>
         </div>
     </footer>
 </body>
