@@ -3,7 +3,7 @@
 }
 
 html, body {
-    font-family: Segoe UI;
+    font-family: 'Segoe UI';
     color: #1f2937;
     background: #f9fafb;
 }
@@ -53,8 +53,7 @@ footer {
     color: #000;
     text-decoration: none;
     padding: 8px 14px;
-    border-radius: 9999px;
-    font-size: 0.15;
+    border-radius: 20px;
 }
 
 .nav__link:hover {
@@ -69,17 +68,13 @@ footer {
     object-fit: cover;
 }
 
+.logo--large {
+    height: 100px;
+}
+
 .logo--nav {
     height: 74px;
     border: #000 solid 1px;
-}
-
-.logo--large {
-    height: 124px;
-}
-
-.logo--small {
-    height: 90px;
 }
 
 .brand {
@@ -162,7 +157,7 @@ footer {
     color: #000000;
     padding: 6px 10px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 .project ul li {
@@ -190,14 +185,6 @@ footer {
 .project__header a:hover {
     background: rgba(150,150,150,0.12);
     border-radius: 10px;
-}
-
-@media (max-width: 520px) {
-    .project ul li img {
-        width: 24px;
-        height: 24px;
-        padding: 2px;
-    }
 }
 
 .project__logo {
@@ -229,12 +216,6 @@ footer {
 .footer_main a:hover{
     background: rgba(150,150,150,0.12);
     color: #000;
-}
-
-@media (max-width: 800px) {
-    .projects-layout {
-        grid-template-columns: 1fr;
-    }
 }
 
 form {
@@ -298,11 +279,6 @@ input[type="file"]::file-selector-button:hover {
     background: #1f2937;
 }
 
-input[type="file"]:focus-within {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
-}
-
 input[type="radio"],
 input[type="checkbox"] {
     margin-right: 8px;
@@ -312,7 +288,6 @@ footer {
     margin-top: 24px;
     padding: 10px 12px;
 }
-
 
 .footer {
     display: grid;
@@ -431,7 +406,7 @@ main {
     padding: 6px 12px 6px 26px;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 15px;
 }
 
 
@@ -471,13 +446,13 @@ main {
 .philosophy-container p {
     columns: 1;
     column-gap: 42px;
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 
 .main--lan-bg {
     position: relative;
-    min-height: 70dvh;
+    min-height: 50dvh;
     background: url("img/logo_personal.png") center;
     border-radius: 24px;
     padding: 60px 40px;
@@ -493,9 +468,7 @@ main {
     color: #000102;
     font-size: 70px;
     margin: 0;
-    line-height: 1.1;
-    letter-spacing: -1px;
-    text-shadow: 0 4px 18px rgba(0,0,0,0.4);
+    line-height: 1
 }
 
 .main--lan-bg .quick-stats {
@@ -503,8 +476,7 @@ main {
 }
 
 .tech-skills-container .skills-group-title {
-    margin-top: 28px;
-    text-transform: uppercase;
+    margin-top: 28px;   
     font-weight: 600;
     color: #374151;
 }
@@ -521,13 +493,11 @@ main {
     padding: 10px 14px 10px 38px;
     border-radius: 14px;
     font-size: 12px;
-    font-weight: 500;
     color: #f8fafc;
     display: flex;
     align-items: center;
     background: #1f2937;
     border: 1px solid #243040;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 
 
@@ -554,13 +524,11 @@ main {
     gap: 8px;
     padding: 10px 16px;
     font-size: 11px;
-    line-height: 1.25;
 }
 
 .skills-list--tools li {
     font-size: 11px;
     padding-right: 16px;
-    line-height: 1.25;
 }
 
 .formacion-container h1 {
@@ -612,13 +580,13 @@ main {
 
 .timeline__title {
     margin: 0 0 6px;
-    font-size: 1.05rem;
+    font-size: 14px;
     letter-spacing: -.3px;
 }
 
 .timeline__desc {
     margin: 0;
-    font-size: .85rem;
+    font-size: 12px;
     line-height: 1.5;
     color: #475569;
 }
@@ -688,19 +656,20 @@ main {
 
 .quick-stats h2 {
     margin: 0 0 10px;
-    font-size: 1.2rem;
+    font-size: 15px;
     color: #fff;
 }
 
 .quick-table {
     width: 100%;
-    font-size: 0.85rem;
+    font-size: 14px;
     background: rgba(255,255,255,0.15);
     border: 1px solid rgba(255,255,255,0.25);
     border-radius: 12px;
     overflow: hidden;
     color: #000509;
 }
+
 
 .quick-table thead {
     background: rgba(0,0,0,0.35);
